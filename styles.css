@@ -1,3 +1,115 @@
 body {
   
 }
+body {
+  margin: 0;
+}
+#home {
+  width: 100%;
+  background-color: blue;
+  font-family: 'Open Sans', sans-serif;
+  top: -1px;
+  color: white;
+  font-weight: bold;
+  background-image:url("https://www.ssh.com/s/iot-security-internet-of-things-698x697-V4sqL0rj.png");
+  
+}
+.burger {
+  position: absolute;
+  top: 0px;
+  left: 90%;
+  z-index: 10;
+  width: 45px;
+  height: 45px;
+  font-size: 40px;
+  color: blue;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition-duration: .4s;
+}
+.burger:hover {
+  color: #dddddd;
+  background-color: rgba(250,250,250,0.2);
+
+}
+.burger:active {
+  color: #cccccc;
+  background-color: rgba(250,250,250,0.3);
+}
+nav.main-nav {
+  position: fixed;
+  z-index: 8;
+  width: 100%;
+  background-color: white;
+  color: blue;
+  height: 45px;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 8px;
+  transition-duration: .4s;
+}
+
+.main-nav > ul {
+  list-style-type: none;
+}
+.main-nav > ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  text-align: center;
+}
+.ddl {
+  width: 40%;
+ left: 160%;
+  position: fixed;
+  z-index: 7;
+  list-style-type: none;
+  background-color: white;
+  padding: 10px;
+}
+.ddl > li {
+  position: relative;
+  top: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 1px solid blue;
+  height: 50px;
+  text-align: center;
+  align: bottom;
+  padding-top: 35px;
+}
+.ddlsup {
+  width: 60%;
+  left: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 7;
+  background-color: rgba(10,10,10,0.6);
+
+}
+img {
+  position: relative;
+}
+img::after {
+  content: "CRASHED IMAGE";
+  position: absolute;
+  font-size: 9px;
+  padding: 10px;
+  border: 2px dashed black;
+}
+
+.p {
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin: 0;
+  display: inline-block;
+}
+.full-view {
+  
+}

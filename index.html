@@ -3,16 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Internet of Things</title>
-  </head>
-  <body>
-
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Internet of Things</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -28,7 +18,19 @@
       text-align: center;
       font-size: 100px;
     }
-
+    #desc, #hist, #ex, #pnc {
+      width: 95%;
+      background-color: #e7e7e7;
+      box-shadow: 3px 3px 11px 1px #0000008a;
+      left: 2.5%;
+      position: relative;
+    }
+    #pnctbl > tbody > tr > td:nth-child(odd) {
+      background-color: green;
+    }
+    #pnctbl > tbody > tr > td:nth-child(even) {
+      background-color: tomato;
+    }
   </style>
   </head>
   <body>
@@ -51,29 +53,89 @@
     <div id="home" class="full-view">
         <br />
         <h1>Internet Of Things</h1>
-      
 
     </div>
-    <div class="full-view">
-      <h1 id="desc">What is IOT?</h1>
-      <img src="" alt="" style="height:100%;width:50%;" />
-      <p style="height:100%;width:50%;left:50%" class="p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br /> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br /> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt<br />ate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaec<br />t cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="full-view">
-      <h1 id="hist">History</h1>
-
-      <p style="width:50%;height:100%;" class="p" >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <div class="img-container" style="height:100%;width:50%;position:relative;display:inline-block">
-        <img src="" alt="" />
-
+    <div class="full-view" id="desc">
+      <h1>What is IoT?</h1>
+      <div class="half-view">
+        <img src="images/ioticon.png" alt="" />
       </div>
-
+      <div class="half-view">
+        <p class="p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
     </div>
+    <div class="full-view" id="hist">
+      <h1>History</h1>
+      <div class="half-view">
+        <p class="p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="half-view">
+        <img alt="" src="images/ioticon.png" />
+      </div>
+    </div>
+    <div class="full-view" id="ex">
+      <h1>Day-to-Day Examples</h1>
+      <div style="overflow-y:scroll;max-height:90%;">
+        <h3>Internet</h3>
+        <img src="images/ioticon.png" alt="" />
+        <p>
+          Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
+        </p>
 
+        <h3>Internet</h3>
+        <img src="images/ioticon.png" alt="" />
+        <p>
+          Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
+        </p>
+         <h3>Something</h3>
+          <img src="images/ioticon.png" alt="" />
+          <p>
+            Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
+          </p>
+          <h3>Element - X</h3>
+            <img src="images/ioticon.png" alt="" />
+            <p>
+              Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
+            </p>
+            <h3>Internet</h3>
+            <img src="images/ioticon.png" alt="" />
+            <p>
+              Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
+            </p>
+            <a href="#">Read more >></a>
+      </div>
+    </div>
+    <div class=full-view id="pnc">
+      <h1>PROS and CONS</h1>
+      <table id="pnctbl">
+        <tr>
+          <td>It si good</td>
+          <td>It is bad</td>
+        </tr>
+        <tr>
+          <td>It iss another reason</td>
+          <td>It is the opposite of the other reaeson</td>
+        </tr>
+      </table>
+    </div>
+    <footer class="main-footer full-view">
+      <div class="footer-cell">
+        <img src="images/ioticon.png" />
+      </div>
+      <div class="footer-cell">
+        follow us <br /> follow <br /> bla bla
+      </div>
+       <div class="footer-cell">
+            <input type="text" placeholder="Feedback" id="" />
+            <button id="sendmail">Send</button>
+            <hr />
+            Copyright (c) 2019 MCICTS All Rights Reserved.
+      </div>
+    </footer>
 
       <script>
         $(".main-nav").css({"color":"white","backgroundColor":"blue"});

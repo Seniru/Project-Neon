@@ -1,7 +1,4 @@
 body {
-  
-}
-body {
   margin: 0;
 }
 #home {
@@ -11,8 +8,9 @@ body {
   top: -1px;
   color: white;
   font-weight: bold;
-  background-image:url("https://www.ssh.com/s/iot-security-internet-of-things-698x697-V4sqL0rj.png");
-  
+  /*background-image: url("images/ioticon.png");*/
+  background-repeat: no-repeat;
+
 }
 .burger {
   position: absolute;
@@ -111,5 +109,76 @@ img::after {
   display: inline-block;
 }
 .full-view {
-  
+  margin: 1px;
+}
+.half-view {
+  width: 50%;
+  height: 100%;
+  display: table-cell;
+  padding: 5px;
+  position: relative;
+}
+.half-view > * {
+  width: 99%;
+height: 80%;
+position: relative;
+font-size: 200%;
+letter-spacing: 8px;
+line-height: 130%;
+overflow-y: scroll;
+}
+
+.examples {
+
+}
+.footer-cell {
+  width: 33%;
+  overflow: hidden;
+}
+
+.main-footer {
+  position: relative;
+height: 800px;
+width: 100%;
+/* background-color: black; */
+display: flex;
+flex-flow: row;
+top: 15px;
+}
+/*for small devices (mobile phones, etc.) */
+@media only screen and (max-width: 600px) {
+  .main-nav > ul > li {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    position: relative;
+  }
+  .main-nav {
+    height: 80px !important;
+  }
+  .main-nav > ul {
+    padding:  0px;
+  }
+
+
+  .half-view > *{
+    width: 100% !important;
+    font-size: 17px !important;
+    letter-spacing: normal !important;
+    line-height: normal !important;
+
+  }
+
+  .half-view > .examples {
+      width: 50%;
+  }
+
+  .half-view {
+    display: block;
+    width: 100% !important;
+    height: 49% !important;
+    padding: 1px;
+
+  }
 }

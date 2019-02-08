@@ -199,6 +199,22 @@ width: 25%;
 bottom: 31%;
 display: inline-block;
 }
+
+.footer-logos {
+  position: relative;
+width: 40%;
+display: inline-block;
+left: 8% !important;
+top: 30% !important;
+margin: 5px;
+}
+.main-footer > section > div {
+  width: 50%;
+  display: ;
+  height: 100%;
+  display: table-cell;
+}
+
 /*for small devices (mobile phones, etc.) */
 @media only screen and (max-width: 600px) {
   .main-nav > ul > li {

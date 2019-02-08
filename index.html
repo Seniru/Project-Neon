@@ -8,10 +8,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="images/ioticon.png" />
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
     #home >  h1 {
       position: relative;
@@ -42,7 +44,7 @@
         <li>USAGE</li>
         <li>ABOUT</li>
       </ul>
-      <button class="burger" value="false">=</button>
+      <button class="burger fas fa-bars" value="false"></button>
     </nav>
     <div class="ddlsup full-view"></div><ul class="ddl full-view" >
       <li><a href="#desc">WHAT IS IOT?</a></li>
@@ -139,14 +141,14 @@
     </footer>
 
       <script>
-        $(".main-nav").css({"color":"white","backgroundColor":"blue"});
+        $(".main-nav").css({"color":"white","backgroundColor":"transparent"});
         $(".burger").css({"color":"white","backgroundColor":"transparent"});
         $(document).scroll(()=>{
           if(document.body.scrollTop>784||document.documentElement.scrollTop>784) {
             $(".main-nav").css({"color":"blue","backgroundColor":"#dddddd"});
             $(".burger").css({"color":"blue","backgroundColor":"#dddddd"});
           } else {
-            $(".main-nav").css({"color":"white","backgroundColor":"blue"});
+            $(".main-nav").css({"color":"white","backgroundColor":"transparent"});
             $(".burger").css({"color":"white","backgroundColor":"transparent"});
           }
         })

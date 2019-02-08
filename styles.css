@@ -134,13 +134,15 @@ overflow-y: scroll;
 .footer-cell {
   width: 33%;
   overflow: hidden;
+  border: 0.1px solid black;
+  color: white;
 }
 
 .main-footer {
   position: relative;
 height: 800px;
 width: 100%;
-/* background-color: black; */
+background-color: #02447e;
 display: flex;
 flex-flow: row;
 top: 15px;

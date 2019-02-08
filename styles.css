@@ -2,23 +2,24 @@ body {
   margin: 0;
 }
 #home {
-  width: 100%;
+  width: 105%;
   font-family: 'Open Sans', sans-serif;
   top: -1px;
   color: white;
   font-weight: bold;
   background-image: url("https://www.gsma.com/iot/wp-content/uploads/2018/05/Paper_MobileIoT_5GFuture_1300x640.png");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 
 }
 .burger {
   position: absolute;
   top: 0px;
-  left: 90%;
+  right: 5%;
   z-index: 10;
   width: 45px;
   height: 45px;
-  font-size: 40px;
+  font-size: 18px;
   color: blue;
   background-color: transparent;
   border: none;
@@ -133,13 +134,15 @@ overflow-y: scroll;
 .footer-cell {
   width: 33%;
   overflow: hidden;
+  border: 0.1px solid black;
+  color: white;
 }
 
 .main-footer {
   position: relative;
 height: 800px;
 width: 100%;
-/* background-color: black; */
+background-color: #02447e;
 display: flex;
 flex-flow: row;
 top: 15px;

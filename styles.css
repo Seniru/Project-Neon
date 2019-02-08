@@ -1,9 +1,10 @@
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 #home {
   width: 105%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   top: -1px;
   color: white;
   font-weight: bold;
@@ -15,7 +16,7 @@ body {
 .burger {
   position: absolute;
   top: 0px;
-  right: 5%;
+  right: 2%;
   z-index: 10;
   width: 45px;
   height: 45px;
@@ -107,6 +108,7 @@ img::after {
   letter-spacing: 3px;
   margin: 0;
   display: inline-block;
+  font-family:'Roboto';
 }
 .full-view {
   margin: 1px;
@@ -146,6 +148,23 @@ background-color: #02447e;
 display: flex;
 flex-flow: row;
 top: 15px;
+}
+.feed {
+  background-color: transparent;
+color: white;
+border: 0px;
+padding: 4px;
+outline: none;
+border-bottom: 2px solid lightblue;
+margin: 15px 3px 15px 3px;
+}
+
+.sendmail {
+  position: relative;
+left: 74%;
+width: 25%;
+bottom: 31%;
+display: inline-block;
 }
 /*for small devices (mobile phones, etc.) */
 @media only screen and (max-width: 600px) {

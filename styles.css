@@ -17,11 +17,11 @@ body {
   position: absolute;
   top: 0px;
   right: 2%;
-  z-index: 10;
+  z-index: 11;
   width: 45px;
   height: 45px;
   font-size: 18px;
-  color: blue;
+  color: white;
   background-color: transparent;
   border: none;
   font-weight: bold;
@@ -43,9 +43,9 @@ nav.main-nav {
   position: fixed;
   z-index: 8;
   width: 100%;
-  background-color: white;
-  color: blue;
-  height: 45px;
+  background-color: transparent;
+  color: white;
+  height: 55px;
   font-weight: bold;
   font-size: 15px;
   letter-spacing: 8px;
@@ -54,22 +54,27 @@ nav.main-nav {
 
 .main-nav > ul {
   list-style-type: none;
+  z-index: 9;
 }
 .main-nav > ul > li {
   display: inline-block;
   padding-left: 5px;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.ddl {
+.ddl{
   width: 40%;
  left: 160%;
   position: fixed;
-  z-index: 7;
+  z-index: 8;
   list-style-type: none;
   background-color: white;
   padding: 10px;
+  height: 100% !important;
+
 }
-.ddl > li {
+.ddl > li  {
   position: relative;
   top: 45px;
   font-size: 20px;
@@ -80,7 +85,27 @@ nav.main-nav {
   text-align: center;
   align: bottom;
   padding-top: 35px;
+  text-decoration: none;
 }
+
+.ddl > li > a:hover {
+  text-decoration: underline;
+}
+
+.ddl > li > a:visited {
+  position: relative;
+  top: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 1px solid blue;
+  height: 50px;
+  text-align: center;
+  align: bottom;
+  padding-top: 35px;
+  text-decoration: none;
+}
+
 .ddlsup {
   width: 60%;
   left: 100%;

@@ -17,11 +17,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
     #home >  h1 {
-      position: relative;
+      position: absolute;
       top: 40px;
-      text-align: center;
       font-size: 100px;
-    }
+      /*thesee things*/
+      top: 20%;
+      left: 20px;
+      /*end here . just change them*/
+}
     #desc, #hist, #ex, #pnc {
       width: 95%;
       background-color: #e7e7e7;
@@ -39,24 +42,10 @@
   </head>
   <body>
 
-    <!--nav class="main-nav">
-      <ul>
-        <li>HOME</li>
-        <li>USAGE</li>
-        <li>ABOUT</li>
-      </ul>
-      <button class="burger fas fa-bars" value="false"></button>
-    </nav>
-    <div class="ddlsup full-view"></div><ul class="ddl full-view" >
-      <li><a href="#desc">WHAT IS IOT?</a></li>
-      <li><a href="#hist">HISTORY</a></li>
-      <li>EXAMPLES</li>
-      <li>DAY-TO-DAY EXAMPLES</li>
-      <li>PROS AND CONS</li>
-    </ul-->
+
     <div id="home" class="full-view">
         <br />
-        <h1>Internet Of Things</h1>
+        <h1>Internet of <br>Things</h1>
 
     </div>
     <div class="full-view" id="desc">
@@ -128,15 +117,29 @@
     </div>
 
       <script>
+      $(document).ready(()=>{
         $(".main-nav").css({"color":"white","backgroundColor":"transparent"});
         $(".burger").css({"color":"white","backgroundColor":"transparent"});
+        $(".main-nav>ul>li:nth-child(1)").css("border-bottom","2px solid white")  ;
+        $(".ddl").append(`
+            <li><a href="#desc">What is IOT?</a></li>
+            <li><a href="#hist">History</a></li>
+            <li><a href="#ex">Day to Day Examples</a></li>
+            <li><a href="#pnc">Pros and Cons</a></li>
+          `);
+      })
+
         $(document).scroll(()=>{
           if(document.body.scrollTop>784||document.documentElement.scrollTop>784) {
             $(".main-nav").css({"color":"blue","backgroundColor":"#dddddd"});
             $(".burger").css({"color":"blue","backgroundColor":"#dddddd"});
+            $(".main-nav>ul>li:nth-child(1)").css("border-bottom","2px solid blue")  ;
+
           } else {
             $(".main-nav").css({"color":"white","backgroundColor":"transparent"});
             $(".burger").css({"color":"white","backgroundColor":"transparent"});
+            $(".main-nav>ul>li:nth-child(1)").css("border-bottom","2px solid white")  ;
+
           }
         })
 

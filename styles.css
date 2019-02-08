@@ -88,8 +88,16 @@ nav.main-nav {
   text-decoration: none;
 }
 
+.ddl > li > a {
+  text-decoration: none;
+
+}
 .ddl > li > a:hover {
   text-decoration: underline;
+}
+
+.ddl > li > a:active {
+  text-decoration: none;
 }
 
 .ddl > li > a:visited {

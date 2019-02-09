@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Internet of Things</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--google fonts-->
@@ -17,18 +17,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
     #home >  h1 {
-      position: absolute;
       top: 40px;
       font-size: 100px;
       /*thesee things*/
       top: 20%;
-      left: 20px;
       /*end here . just change them*/
 }
     #desc, #hist, #ex, #pnc {
       width: 95%;
-      background-color: #e7e7e7;
-      box-shadow: 3px 3px 11px 1px #0000008a;
       left: 2.5%;
       position: relative;
     }
@@ -50,31 +46,42 @@
     </div>
     <div class="full-view" id="desc">
       <h1>What is IoT?</h1>
+      <br /><br /><br /><br />
+      <section>
+
       <div class="half-view">
-        <img src="https://sloanreview.mit.edu/content/uploads/2016/01/IoT-Internet-of-Things-3-1200-300x300.jpg" alt="" />
+        <img src="https://www.webyot.com/assets/site/img/iot.png" alt="" class="half-img"/>
       </div>
       <div class="half-view">
         <p class="p">
           The internet of things, or IoT, is a system of interrelated computing devices, mechanical and digital machines, objects, animals or people that are provided with unique identifiers (UIDs) and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction.
         </p>
       </div>
+    </section>
+
     </div>
     <div class="full-view" id="hist">
       <h1>History</h1>
+      <section>
+
       <div class="half-view">
         <p class="p">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
       <div class="half-view">
-        <img alt="" src="images/ioticon.png" />
+        <img alt="" src="https://aggregate.tibbo.com/v3_images/heading-backgrounds/development-background-image.png" />
       </div>
+    </section>
+
     </div>
     <div class="full-view" id="ex">
+
       <h1>Day-to-Day Examples</h1>
+
       <div style="overflow-y:scroll;max-height:90%;">
         <h3>Internet</h3>
-        <img src="images/ioticon.png" alt="" />
+        <img src="http://icons.iconarchive.com/icons/dtafalonso/modern-xp/512/ModernXP-68-Internet-icon.png" alt="" />
         <p>
           Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
         </p>
@@ -101,8 +108,10 @@
             </p>
             <a href="#">Read more >></a>
       </div>
+
     </div>
     <div class=full-view id="pnc">
+
       <h1>PROS and CONS</h1>
       <table id="pnctbl">
         <tr>
@@ -114,11 +123,13 @@
           <td>It is the opposite of the other reaeson</td>
         </tr>
       </table>
+
     </div>
 
       <script>
       $(document).ready(()=>{
-        $("#mainti").animate({"margin-left":"0%","width":"100%"},3000,"linear");
+        //makes the nav bar moves also
+        //$("#mainti").animate({"left":"0%"},3000,"linear");
         $(".main-nav").css({"color":"white","backgroundColor":"transparent"});
         $(".burger").css({"color":"white","backgroundColor":"transparent"});
         $(".main-nav>ul>li:nth-child(1)").css("border-bottom","2px solid white")  ;

@@ -43,8 +43,8 @@ nav.main-nav {
   position: fixed;
   z-index: 8;
   width: 100%;
-  background-color: transparent;
-  color: white;
+  background-color: #dddddd;
+  color: blue;
   height: 55px;
   font-weight: bold;
   font-size: 15px;
@@ -64,11 +64,42 @@ nav.main-nav {
   margin-right: 10px;
 }
 
-         #mainti {
-           margin-left: 100%;
-           width: 100%;
+.half-img {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+#ex > div > img {
+left: 40%;
+width: 20%;
+}
+        /* #mainti {
+           left: 100%;
+           position: relative;
+
+         }*/
+         /*@-moz-keyframes slidein {
+            from {
+               margin-left:100%;
+               width:300%
+            }
+            to {
+               margin-left:0%;
+               width:100%;
+            }
          }
-        
+         @-webkit-keyframes slidein {
+            from {
+               margin-left:100%;
+               width:300%
+            }
+            to {
+               margin-left:0%;
+               width:100%;
+            }
+         }*/
+
+
 .ddl{
   width: 40%;
  left: 160%;
@@ -152,28 +183,26 @@ img::after {
 .full-view {
   margin: 1px;
 }
-.half-view {
-  width: 50%;
-  height: 100%;
-  display: table-cell;
-  padding: 5px;
-  position: relative;
+.full-view > section  {
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column: 2;
 }
+
 .half-view > * {
-  width: 99%;
-height: 80%;
-position: relative;
+
 font-size: 200%;
 letter-spacing: 8px;
 line-height: 130%;
 overflow-y: scroll;
+margin: auto;
 }
 
 .examples {
 
 }
 .footer-cell {
-  width: 33%;
   overflow: hidden;
   border: 0.1px solid black;
   color: white;
@@ -181,44 +210,24 @@ overflow-y: scroll;
 
 .main-footer {
   position: relative;
-height: 800px;
 width: 100%;
 background-color: #02447e;
-display: flex;
-flex-flow: row;
 top: 15px;
-}
-.feed {
-  background-color: transparent;
-color: white;
-border: 0px;
-padding: 4px;
-outline: none;
-border-bottom: 2px solid lightblue;
-margin: 15px 3px 15px 3px;
+display: grid;
+grid-template-columns: 33% 66%;
 }
 
-.sendmail {
-  position: relative;
-left: 74%;
-width: 25%;
-bottom: 31%;
-display: inline-block;
+.logobar {
+  display: grid;
+  grid-row: 1;
 }
-
-.footer-logos {
-  position: relative;
-width: 40%;
-display: inline-block;
-left: 8% !important;
-top: 30% !important;
-margin: 5px;
+.logobar > img {
+  margin: auto;
+  border-radius: 50%;
 }
-.main-footer > section > div {
-  width: 50%;
-  display: ;
-  height: 100%;
-  display: table-cell;
+.main-footer > section {
+  display: grid;
+grid-template-columns: 50% 50%;
 }
 
 /*for small devices (mobile phones, etc.) */
@@ -259,24 +268,25 @@ margin: 5px;
   }
 
   .main-footer {
-    display: block;
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    grid-template-columns: none;
+    grid-template-rows: 30% 70%;
 
   }
-  .main-footer > * {
-    width: 100%;
-    height: 33%;
+  .contact {
+    display: grid;
+    grid-template-columns:  50% 50%;
   }
-  .footer-logos {
-    position: relative;
-width: 40%;
-display: inline-block;
-left: 8% !important;
-top: 30% !important;
-margin: 5px;
-  }
-  .main-footer > section > div {
-    width: 50%;
-    display: ;
-    height: 100%;
-    display: table-cell;  }
-}
+
+  .logobar  {
+    grid-row: auto;
+grid-template-columns: 50% 50%;
+ }
+
+ .logobar > img {
+   width: 70%;
+   height: 70%;
+   margin: auto;
+ }

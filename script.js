@@ -1,6 +1,10 @@
 //js
+var conts;
+const scroll = 500;
 $(document).ready(()=>{
+
   $(".full-view").css("height",window.innerHeight+"px");
+  $(".p").css("max-height",window.innerHeight-150+"px");
   /*if($(".full-view").hasChild("half-view")) {
     $(".full-view").css({"display":"grid"});
   }*/
@@ -25,7 +29,10 @@ $(document).ready(()=>{
       </div>
       <!--/section-->
     </footer>`);
-
+    conts = Array.prototype.slice.call($(".cont"));
+    $(".cont:nth-child(even)").animate({left:"-100%"},1);
+    $(".cont:nth-child(odd)").animate({left:"100%"},1);
+    $(".cont").css("transition-duration","4s");
 
     $(".burger").click(()=>{
     $(".ddlsup").animate({"left":$(".burger").attr("value")=="false"?"0%":"100%"},400);
@@ -39,4 +46,9 @@ $(document).ready(()=>{
     $(".burger").attr("value","false");
   });
   $(".ddlsup").click(()=>$(".burger").trigger("click"));
+
+  $(window).scroll(()=>{
+    $("#"+$(conts[Math.floor((document.documentElement.scrollTop+50)/scroll)]).attr("id")).css({"left":"2.5%"});
+    conts[Math.floor((document.documentElement.scrollTop+50)/scroll)] = "";
+  });
 });

@@ -17,11 +17,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
     #home >  h1 {
-      top: 40px;
       font-size: 100px;
-      /*thesee things*/
       top: 20%;
-      /*end here . just change them*/
+      position: absolute;
+      left: 20px;
 }
     #desc, #hist, #ex, #pnc {
       width: 95%;
@@ -29,11 +28,24 @@
       position: relative;
     }
     #pnctbl > tbody > tr > td:nth-child(odd) {
-      background-color: green;
+      background-color: #2ecb71;
     }
     #pnctbl > tbody > tr > td:nth-child(even) {
       background-color: tomato;
     }
+    #pnctbl {
+      width: 100%;
+      top: 20px;
+      position: relative;
+        }
+    #pnctbl > tbody > tr > td {
+      width: 50%;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      text-align: center;
+  }
   </style>
   </head>
   <body>
@@ -44,7 +56,7 @@
         <h1 id="mainti">Internet of <br>Things</h1>
 
     </div>
-    <div class="full-view" id="desc">
+    <div class="full-view cont" id="desc">
       <h1>What is IoT?</h1>
       <br /><br /><br /><br />
       <section>
@@ -60,7 +72,7 @@
     </section>
 
     </div>
-    <div class="full-view" id="hist">
+    <div class="full-view cont" id="hist">
       <h1>History</h1>
       <section>
 
@@ -75,7 +87,7 @@
     </section>
 
     </div>
-    <div class="full-view" id="ex">
+    <div class="full-view cont" id="ex">
 
       <h1>Day-to-Day Examples</h1>
 
@@ -86,23 +98,23 @@
           Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
         </p>
 
-        <h3>Internet</h3>
-        <img src="images/ioticon.png" alt="" />
+        <h3>Connected Security Systems</h3>
+        <img src="https://www.vcnewsnetwork.com/wp-content/uploads/2017/08/14004-thumb.png" alt="" />
         <p>
           Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
         </p>
-         <h3>Something</h3>
-          <img src="images/ioticon.png" alt="" />
+         <h3>Smart Cars</h3>
+          <img src="https://blogs.intel.com/iot/files/2016/01/connectedCar1.png" alt="" />
           <p>
             Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
           </p>
-          <h3>Element - X</h3>
-            <img src="images/ioticon.png" alt="" />
+          <h3>Personal Assistants</h3>
+            <img src="https://www.acelerartech.com/wp-content/uploads/2017/01/Virtual-AccountingAssistant.png" alt="" />
             <p>
               Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
             </p>
-            <h3>Internet</h3>
-            <img src="images/ioticon.png" alt="" />
+            <h3>Smart Environments and Houses</h3>
+            <img src="http://vnits.vn/wp-content/uploads/2014/04/smarthome.png" alt="" />
             <p>
               Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
             </p>
@@ -110,17 +122,42 @@
       </div>
 
     </div>
-    <div class=full-view id="pnc">
+    <div class="full-view cont" id="pnc">
 
-      <h1>PROS and CONS</h1>
+      <header style="text-align:center"><img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/sign-check-icon.png" alt="" style="display:inline-block;"/><h1 style="display:inline-block;"> PROS and CONS </h1><img style="display:inline-block;" src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/48/sign-error-icon.png" alt="" /></header>
       <table id="pnctbl">
         <tr>
-          <td>It si good</td>
-          <td>It is bad</td>
+          <td>Cost Savings</td>
+          <td>Over Dependency on Technology</td>
         </tr>
         <tr>
-          <td>It iss another reason</td>
-          <td>It is the opposite of the other reaeson</td>
+          <td>Information</td>
+          <td>Losing Security on Privacy</td>
+        </tr>
+        <tr>
+          <td>Communication</td>
+          <td>Lesse Employment Prospects</td>
+        </tr>
+        <tr>
+          <td>Automation and Control</td>
+          <td>Complexity
+          </td>
+        </tr>
+        <tr>
+          <td>More Available Information Makes Life Easier to Manage.</td>
+          <td>Compatability Issues</td>
+        </tr><tr>
+          <td>Track Inventories or People Easier</td>
+          <td>More Opportunities to Fail</td>
+        </tr><tr>
+          <td>Make Products and Services More Affordable</td>
+          <td>Health and Fitness Issues</td>
+        </tr><tr>
+          <td>Socio-Economic Issues Could Finally be Addressed</td>
+          <td>High Potential to Eliminate Jobs</td>
+        </tr><tr>
+          <td>Instant Access for Data and Information</td>
+          <td>Reduce Human Skills</td>
         </tr>
       </table>
 

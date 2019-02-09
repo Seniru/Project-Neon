@@ -1,6 +1,5 @@
 //js
 var conts;
-const scroll = 500;
 $(document).ready(()=>{
 
   $(".full-view").css("height",window.innerHeight+"px");
@@ -48,7 +47,7 @@ $(document).ready(()=>{
   $(".ddlsup").click(()=>$(".burger").trigger("click"));
 
   $(window).scroll(()=>{
-    $("#"+$(conts[Math.floor((document.documentElement.scrollTop+50)/scroll)]).attr("id")).css({"left":"2.5%"});
+    $("#"+$(conts[Math.floor((document.documentElement.scrollTop+50)/scroll)]).attr("id")).css({"left":"2.5%","color":"red"});
     conts[Math.floor((document.documentElement.scrollTop+50)/scroll)] = "";
   });
 });

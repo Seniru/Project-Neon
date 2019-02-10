@@ -52,6 +52,20 @@ top: 10px;
 position: relative;
 overflow-y: scroll;
 }
+ #mainti {
+   margin-left:  100%;
+   position: relative;
+}
+
+#body {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+#body::-webkit-scrollbar { /* WebKit */
+    width: 0px;
+}
+
   </style>
   </head>
   <body>
@@ -176,7 +190,8 @@ overflow-y: scroll;
       $(document).ready(()=>{
 
         //makes the nav bar moves also
-        //$("#mainti").animate({"left":"0%"},3000,"linear");
+
+        $("#mainti").animate({"margin-left":"5%"},3000,"linear");
         $(".main-nav").css({"color":"white","backgroundColor":"transparent"});
         $(".burger").css({"color":"white","backgroundColor":"transparent"});
         $(".main-nav>ul>li:nth-child(1)").css("border-bottom","2px solid white")  ;

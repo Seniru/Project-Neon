@@ -55,14 +55,14 @@ overflow-y: scroll;
  #mainti {
    margin-left:  100%;
    position: relative;
+   top:3%;
 }
-
 #body {
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* IE 10+ */
 }
-#body::-webkit-scrollbar { /* WebKit */
+ #body::-webkit-scrollbar { /* WebKit */
     width: 0px;
 }
 
@@ -100,7 +100,7 @@ overflow-y: scroll;
 
       <div class="half-view">
         <p class="p">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          The concept of IoT started to gain some popularity in the summer of 2010. Some information from  Google’s StreetView service that they had not only made 360 degree pictures but had also stored tons of private data of people’s Wifi networks. People debated whether this was a Google strategy to not only index the internet but also index the physical world.
         </p>
       </div>
       <div class="half-view">
@@ -117,8 +117,8 @@ overflow-y: scroll;
         <h3>Internet</h3>
         <img src="http://icons.iconarchive.com/icons/dtafalonso/modern-xp/512/ModernXP-68-Internet-icon.png" alt="" />
         <p>
-          Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
-        </p>
+            Internet, a system architecture that has revolutionized communications and methods of commerce by allowing various computer networks around the world to interconnect. Sometimes referred to as a “network of networks,” the Internet emerged in the United States in the 1970s but did not become visible to the general public until the early 1990s. By 2015, approximately 3.2 billion people, or nearly half of the world’s population, were estimated to have access to the Internet.
+      </p>
 
         <h3>Connected Security Systems</h3>
         <img src="https://www.vcnewsnetwork.com/wp-content/uploads/2017/08/14004-thumb.png" alt="" />
@@ -140,7 +140,7 @@ overflow-y: scroll;
             <p>
               Internet is something, dont ask me  about that just refer to wikipedia XD: jk; under construction!!!!! Please be patient!!!!!
             </p>
-            <a href="#">Read more >></a>
+            <a href="examples.html">Read more <i class="fas fa-external-link-alt"></i></a>
       </div>
 
     </div>
@@ -191,7 +191,7 @@ overflow-y: scroll;
 
         //makes the nav bar moves also
 
-        $("#mainti").animate({"margin-left":"5%"},3000,"linear");
+        $("#mainti").animate({"margin-left":"5%"},2000,"linear");
         $(".main-nav").css({"color":"white","backgroundColor":"transparent"});
         $(".burger").css({"color":"white","backgroundColor":"transparent"});
         $(".main-nav>ul>li:nth-child(1)").css("border-bottom","2px solid white")  ;

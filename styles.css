@@ -1,3 +1,14 @@
+
+.p {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+ .p::-webkit-scrollbar { /* WebKit */
+    width: 0px;
+}
+
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -75,33 +86,41 @@ nav.main-nav {
 left: 40%;
 width: 20%;
 }
-    
+
 
 .ddl{
   width: 40%;
- left: 160%;
-  position: fixed;
-  z-index: 8;
-  list-style-type: none;
-  background-color: white;
-  padding: 10px;
-  height: 100% !important;
+ l    width: 40%;
+    left: 160%;
+    position: fixed;
+    z-index: 8;
+    list-style-type: none;
+    background-color: white;
+    padding: 10px;
+    height: 100% !important;
+    background-image: url(https://developers.redhat.com/blog/wp-content/uploads/2015/07/internetofthings-01.png);
+    background-repeat: no-repeat;
+    background-position: 25% 270%;
+    background-size: 100% 90%;
 
 }
 .ddl > li  {
   position: relative;
-  top: 45px;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 5px;
-  border-bottom: 1px solid blue;
-  height: 50px;
-  text-align: center;
-  align: bottom;
-  padding-top: 35px;
-  text-decoration: none;
+top: 45px;
+font-size: 20px;
+font-weight: bold;
+padding: 5px;
+border-bottom: 1px solid rgba(0,0,0,0.2);
+height: 50px;
+text-align: center;
+padding-top: 35px;
+text-decoration: none;
+color: #0f7be0;
 }
 
+a:visited {
+    color: #0f7be0;
+}
 .ddl > li > a {
   text-decoration: none;
 
@@ -222,7 +241,7 @@ cursor: pointer;
 }
 
 .s-media {
-  color: white;
+  color: white !important;
   margin: 12px;
   font-size: 19px;
   font-weight: bold;

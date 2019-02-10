@@ -18,7 +18,7 @@
     <style>
     #home >  h1 {
       font-size: 100px;
-      top: 20%;
+      /*top: 20%;*/
       position: absolute;
       left: 20px;
 }
@@ -46,12 +46,18 @@
       border-radius: 8px;
       text-align: center;
   }
-
+#body {
+  display: block;
+top: 10px;
+position: relative;
+overflow-y: scroll;
+}
   </style>
   </head>
   <body>
 
 
+<section id="body">
 
     <div id="home" class="full-view">
         <br />
@@ -164,6 +170,7 @@
       </table>
 
     </div>
+  </section>
  <script>
       const scroll = 500;
       $(document).ready(()=>{

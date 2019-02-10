@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 #home {
   width: 105%;
@@ -21,7 +22,7 @@ body {
   width: 45px;
   height: 45px;
   font-size: 18px;
-  color: white;
+  color: blue;
   background-color: transparent;
   border: none;
   font-weight: bold;
@@ -50,6 +51,7 @@ nav.main-nav {
   font-size: 15px;
   letter-spacing: 8px;
   transition-duration: .4s;
+  top: 0px;
 }
 
 .main-nav > ul {
@@ -206,6 +208,7 @@ margin: auto;
   overflow: hidden;
   border: 0.1px solid black;
   color: white;
+  padding: 5%;
 }
 
 .main-footer {
@@ -215,6 +218,56 @@ background-color: #02447e;
 top: 15px;
 display: grid;
 grid-template-columns: 33% 66%;
+}
+
+#feed {
+  width: 75%;
+background-color: transparent;
+border: 1px solid transparent;
+border-bottom: 3px solid blue;
+height: 35px;
+font-size: 20px;
+color: white;
+outline: none;
+transition-duration:  1s;
+}
+
+#submit {
+  height: 35px;
+width: 20%;
+font-size: 25px;
+background-color: transparent;
+border: 1px solid transparent;
+outline: transparent;
+text-align: left;
+vertical-align: bottom;
+color: white;
+transition-duration: .5s;
+cursor: pointer;
+}
+
+.s-media {
+  color: white;
+  margin: 12px;
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: .3s;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+.s-media:hover  {
+  border-bottom: 1px solid white;
+}
+
+#feed:focus {
+  border-bottom: 3px solid #09b0f0;
+}
+#submit:hover {
+  outline: none;
+  color: #aaaaaa;
 }
 
 .logobar {
@@ -241,6 +294,9 @@ grid-template-columns: 50% 50%;
   }
   .main-nav {
     height: 80px !important;
+    display: inline-table;
+    left: 0px !important;
+
   }
   .main-nav > ul {
     padding:  0px;

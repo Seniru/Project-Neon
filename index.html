@@ -46,10 +46,13 @@
       border-radius: 8px;
       text-align: center;
   }
+
   </style>
   </head>
   <body>
 
+
+<section>
 
     <div id="home" class="full-view">
         <br />
@@ -162,8 +165,8 @@
       </table>
 
     </div>
-
-      <script>
+  </section>
+ <script>
       const scroll = 500;
       $(document).ready(()=>{
 
@@ -173,14 +176,15 @@
         $(".burger").css({"color":"white","backgroundColor":"transparent"});
         $(".main-nav>ul>li:nth-child(1)").css("border-bottom","2px solid white")  ;
         $(".ddl").append(`
-            <li><a href="#desc">What is IOT?</a></li>
-            <li><a href="#hist">History</a></li>
-            <li><a href="#ex">Day to Day Examples</a></li>
-            <li><a href="#pnc">Pros and Cons</a></li>
+            <li><a href="#desc" onclick="$('.burger').trigger('click')">What is IOT?</a></li>
+            <li><a href="#hist" onclick="$('.burger').trigger('click')">History</a></li>
+            <li><a href="#ex" onclick="$('.burger').trigger('click')">Day to Day Examples</a></li>
+            <li><a href="#pnc" onclick="$('.burger').trigger('click')">Pros and Cons</a></li>
           `);
       })
-
         $(document).scroll(()=>{
+          $("#test").css("top",$(document).scrollTop())
+
           if(document.body.scrollTop>784||document.documentElement.scrollTop>784) {
             $(".main-nav").css({"color":"blue","backgroundColor":"#dddddd"});
             $(".burger").css({"color":"blue","backgroundColor":"#dddddd"});
